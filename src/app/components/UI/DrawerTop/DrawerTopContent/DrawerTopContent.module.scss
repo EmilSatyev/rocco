@@ -1,0 +1,13 @@
+.drawerTopContent {
+  outline: 1px solid red;
+}
+.cities {
+  padding: 70px var(--offset) 110px;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(6, auto);
+  column-gap: 40px;
+  row-gap: 48px;
+  font-size: 14px;
+  line-height: 200%;
+}

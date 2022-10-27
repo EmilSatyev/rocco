@@ -1,0 +1,48 @@
+.drawer {
+  position: relative;
+  z-index: 9;
+
+  &__overlay {
+    position: absolute;
+    width: 100%;
+    height: calc(100vh - 124px);
+    background-color: rgba(#444444, 0);
+    transition: all var(--delay);
+    visibility: hidden;
+  }
+
+  &__content {
+    width: 512px;
+    background-color: var(--white);
+    position: absolute;
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    right: 0;
+    transform: translateX(100%);
+    transition: transform var(--delay);
+  }
+
+  &__wrap {
+    display: flex;
+    flex-direction: column;
+    outline: 1px solid red;
+    flex-grow: 1;
+  }
+
+  &__goods {
+    flex-grow: 1;
+    height: 0;
+  }
+}
+
+.open{
+  .drawer__overlay {
+    visibility: visible;
+    background-color: rgba(#444444, 0.9);
+  }
+
+  .drawer__content {
+    transform: translateX(0);
+  }
+}

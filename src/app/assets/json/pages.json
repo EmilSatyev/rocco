@@ -1,0 +1,52 @@
+[
+  {
+    "id": 1,
+    "title": "Главная",
+    "url": "/"
+  },
+  {
+    "id": 2,
+    "title": "О компании",
+    "url": "/about"
+  },
+  {
+    "id": 3,
+    "title": "Бренды",
+    "url": "/brands"
+  },
+  {
+    "id": 4,
+    "title": "Доставка и оплата",
+    "url": "/delivery"
+  },
+  {
+    "id": 5,
+    "title": "Гарантии",
+    "url": "/guarantees"
+  },
+  {
+    "id": 6,
+    "title": "Обмен / возврат",
+    "url": "/refund"
+  },
+  {
+    "id": 7,
+    "title": "Новости",
+    "url": "/news"
+  },
+  {
+    "id": 8,
+    "title": "Статьи",
+    "url": "/articles"
+  },
+  {
+    "id": 9,
+    "title": "Контакты",
+    "url": "/contacts"
+  },
+  {
+    "id": 10,
+    "title": "Каталог",
+    "url": "/catalog"
+  }
+]

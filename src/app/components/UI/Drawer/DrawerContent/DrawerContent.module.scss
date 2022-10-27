@@ -1,0 +1,35 @@
+.drawerContent {
+
+  &__wrap {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding: 39px var(--offset);
+  }
+
+  &__title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--light-gray);
+    padding-bottom: 13px;
+    margin-bottom: 49px;
+  }
+
+  &__subtitle {
+    margin-bottom: 22px;
+  }
+
+  &__btn {
+    justify-content: center;
+    height: 71px;
+    font-size: 16px;
+    &:hover {
+      border-top: 1px solid var(--light-gray);
+    }
+  }
+  &__goods {
+    flex-grow: 1;
+    height: 0;
+  }
+}

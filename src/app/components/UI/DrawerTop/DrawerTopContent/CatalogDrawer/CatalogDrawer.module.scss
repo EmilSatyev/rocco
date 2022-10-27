@@ -1,0 +1,31 @@
+.catalogDrawer {
+
+  &__head {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  &__btn {
+    display: flex;
+    justify-content: center;
+    height: 113px !important;
+    border-bottom: 1px solid var(--light-gray);
+
+    &:first-child {
+      border-right: 1px solid var(--light-gray);
+    }
+  }
+
+  &__list {
+    display: grid;
+    gap: 40px;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 108px var(--offset);
+    background-color: var(--white);
+
+    li > svg {
+      margin: 0;
+      width: 100%;
+    }
+  }
+}

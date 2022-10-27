@@ -1,0 +1,32 @@
+.drawer_top {
+  position: relative;
+  z-index: 9;
+
+  &__overlay {
+    position: absolute;
+    width: 100%;
+    height: calc(100vh - 124px);
+    background-color: rgba(#444444, 0);
+    transition: all var(--delay);
+    visibility: hidden;
+  }
+
+  &__content {
+    width: 100%;
+    background-color: var(--white);
+    position: absolute;
+    transform: translateY(-100%);
+    transition: transform var(--delay);
+  }
+}
+
+.open{
+  .drawer_top__overlay {
+    visibility: visible;
+    background-color: rgba(#444444, 0.9);
+  }
+
+  .drawer_top__content {
+    transform: translateY(0);
+  }
+}

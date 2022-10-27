@@ -1,0 +1,23 @@
+.breadcrumbs {
+  padding: 0 var(--offset);
+  border-bottom: 1px solid var(--light-gray);
+  height: 43px;
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  line-height: 150%;
+
+  > span {
+    display: flex;
+    color: var(--light-gray);
+
+    a {
+      color: var(--gray);
+    }
+  }
+
+  svg {
+    fill: var(--gray);
+    margin: 0 18px;
+  }
+}

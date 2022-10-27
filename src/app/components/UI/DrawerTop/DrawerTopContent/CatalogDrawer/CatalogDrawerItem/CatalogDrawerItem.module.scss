@@ -1,0 +1,18 @@
+.item {
+  background-repeat: no-repeat;
+  background-size: 40px;
+  padding-left: 54px;
+
+  &__subtitle {
+    margin: 0 0 26px;
+  }
+  &__sublist {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 185%;
+  }
+  &__show_all {
+    color: var(--light-gray);
+    margin-top: 10px;
+  }
+}

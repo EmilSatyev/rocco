@@ -1,0 +1,131 @@
+.header {
+  font-size: 12px;
+  line-height: 150%;
+  color: var(--gray);
+  position: relative;
+  background-color: var(--white);
+  z-index: 10;
+}
+
+.top {
+  height: 44px;
+  border-bottom: 1px solid var(--light-gray);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 var(--offset);
+
+  button, a {
+    display: flex;
+    align-items: center;
+    font-size: inherit;
+    color: var(--gray);
+
+    svg {
+      margin-right: 10px;
+    }
+
+    &:hover {
+      color: var(--black);
+      text-decoration: underline;
+    }
+  }
+}
+
+.nav ul {
+  display: flex;
+  gap: 30px;
+}
+
+.bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--light-gray);
+  height: 79px;
+  padding: 0 var(--offset);
+
+  &__left {
+    display: flex;
+    gap: 35px;
+    min-width: 320px;
+
+    svg {
+      margin-right: 10px;
+    }
+  }
+
+  button, a {
+    display: flex;
+    align-items: center;
+    color: var(--black);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+
+    &:hover {
+      color: #000000;
+      text-decoration: underline;
+    }
+
+    span {
+      font-weight: 600;
+    }
+  }
+
+  &__search {
+    display: block;
+    flex-grow: 1;
+    position: relative;
+    margin: 0 35px;
+
+    button {
+      position: absolute;
+      right: 0;
+      top: 50%;
+      color: var(--light-gray);
+
+      svg {
+        transform: translateY(-50%);
+      }
+    }
+
+    input {
+      padding: 7px 20px 7px 5px;
+      width: 100%;
+      border: none;
+      border-bottom: 1px solid var(--light-gray);
+      font-size: 12px;
+      line-height: 150%;
+      font-family: var(--font-family);
+
+
+      &::placeholder {
+        color: var(--light-gray);
+      }
+
+      &:focus {
+        outline: none;
+        border-bottom: 1px solid var(--black);
+      }
+
+    }
+  }
+
+  &__icons {
+    min-width: 320px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 25px;
+  }
+
+
+}
+
+.search_open {
+  .bottom {
+    &__left, &__icons {
+      min-width: unset;
+    }
+  }
+}

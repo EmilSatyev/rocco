@@ -1,0 +1,35 @@
+.footer {
+
+  &__nav {
+    display: flex;
+    justify-content: center;
+    padding: 50px var(--offset) 40px var(--offset);
+    border-top: 1px solid var(--gray);
+    border-bottom: 1px solid var(--gray);
+    gap: 60px;
+  }
+  &__subtitle {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 150%;
+    margin-bottom: 13px;
+  }
+
+  &__item {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 176%;
+  }
+}
+
+.copyright {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px var(--offset);
+  span {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    color: var(--gray);
+  }
+}

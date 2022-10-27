@@ -1,0 +1,32 @@
+.catalog {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 427px 171px;
+  //grid-auto-rows: 489px;
+
+  &__btns {
+    grid-area: 2/1/2/5;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-bottom: 1px solid var(--light-gray);
+
+
+    a {
+      padding-left: 58px;
+      font-size: 32px;
+      line-height: 110%;
+      &:first-child {
+        border-right: 1px solid var(--gray);
+      }
+      svg {
+        margin-left: 28px;
+        width: 40px;
+        height: 40px;
+      }
+    }
+  }
+
+}
+
+// 1, 2, 4, 6
+// 11, 13, 15,

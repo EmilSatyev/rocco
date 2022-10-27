@@ -1,0 +1,45 @@
+.popular {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 455px 257px;
+}
+
+.block {
+  border-bottom: 1px solid var(--light-gray);
+  border-right: 1px solid var(--light-gray);
+
+  &:nth-child(3n) {
+    border-right: none;
+  }
+
+  &__title {
+    padding: 105px 0 0 60px;
+  }
+  &__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    img {
+      width: auto;
+      height: auto;
+    }
+
+    h5 {
+      position: absolute;
+      bottom: 23px;
+      left: 35px;
+
+      &:hover {
+        color: #000000;
+        text-decoration: underline;
+      }
+    }
+  }
+  &__btn {
+    align-self: flex-end;
+    height: 72px;
+    border-top: 1px solid var(--light-gray);
+    padding-left: 34px;
+  }
+}

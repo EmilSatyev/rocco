@@ -1,0 +1,43 @@
+.contactUs {
+  font-family: var(--font-title);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 220px 365px;
+  grid-template-areas:
+    "t p p"
+    "t a a";
+
+  &__title_block {
+    grid-area: t;
+    padding: 71px 0 0 var(--offset);
+    border-right: 1px solid var(--gray);
+  }
+
+  &__phone_block, &__address_block {
+    padding: 71px 0 0 var(--offset);
+    display: flex;
+    grid-area: p;
+  }
+
+  &__address_block {
+    grid-area: a;
+    border-top: 1px solid var(--gray);
+  }
+
+  &__subtitle {
+    color: var(--gray);
+    font-size: 14px;
+    min-width: 230px;
+  }
+
+  &__desc {
+    font-size: 18px;
+    margin-bottom: 66px;
+
+    span {
+      line-height: 150%;
+
+      display: block;
+    }
+  }
+}

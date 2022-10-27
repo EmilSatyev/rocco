@@ -1,0 +1,36 @@
+.categoryTitle {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1.25fr 0.75fr;
+  grid-template-rows: 197px 232px;
+  border-bottom: 1px solid var(--light-gray);
+
+
+  &__image1_block {
+    grid-area: 1/1/3/1;
+  }
+
+  &__image2_block {
+    grid-area: 2/4/3/5;
+
+  }
+
+  &__title_block {
+    grid-area: 1/2/2/4;
+    border-right: 1px solid var(--light-gray);
+    border-bottom: 1px solid var(--light-gray);
+    display: flex;
+    align-items: flex-end;
+    padding: 26px 57px;
+  }
+
+  &__descr_block {
+    grid-area: 2/2/3/4;
+    display: flex;
+    justify-content: center;
+    padding-top: 42px;
+
+    p {
+      max-width: 410px;
+    }
+  }
+}
